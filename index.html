@@ -5,13 +5,21 @@
     }
 </style>
 
-<canvas>
+<body>
+    <audio autoplay>
+        <source src="audiomass-output.mp3" type="audio/mp3">
+    </audio>
+
+    <canvas>
 
 
 
 
 
-</canvas>
+
+    </canvas>
+
+</body>
 
 <script>
     const canvas = document.querySelector('canvas');
@@ -49,7 +57,7 @@
         constructor({ position }) {
             this.position = position
 
-            const speed = 14
+            const speed = 8
             const direction = {
                 x: Math.random() - 0.5 >= 0 ? -speed : speed,
                 y: Math.random() - 0.5 >= 0 ? -speed : speed,
